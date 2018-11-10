@@ -1,0 +1,32 @@
+<%= form_with(model: investor, local: true) do |form| %>
+  <% if investor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(investor.errors.count, "error") %> prohibited this investor from being saved:</h2>
+
+      <ul>
+      <% investor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :sector_id %>
+    <%= form.text_field :sector_id, id: :investor_sector_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :monto_minimo %>
+    <%= form.text_field :monto_minimo, id: :investor_monto_minimo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :monto_maximo %>
+    <%= form.text_field :monto_maximo, id: :investor_monto_maximo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

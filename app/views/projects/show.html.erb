@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sector:</strong>
+  <%= @project.sector %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @project.marca %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @project.descripcion %>
+</p>
+
+<p>
+  <strong>Necesidad dinero:</strong>
+  <%= @project.necesidad_dinero %>
+</p>
+
+<p>
+  <strong>Necesidad colaboradores:</strong>
+  <%= @project.necesidad_colaboradores %>
+</p>
+
+<p>
+  <strong>Necesidad colaboradores cantidad:</strong>
+  <%= @project.necesidad_colaboradores_cantidad %>
+</p>
+
+<p>
+  <strong>Necesidad otra:</strong>
+  <%= @project.necesidad_otra %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

@@ -1,0 +1,2 @@
+module InvestorProjectsHelper
+end

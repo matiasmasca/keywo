@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sector: one
+  monto_minimo: 9.99
+  monto_maximo: 9.99
+
+two:
+  sector: two
+  monto_minimo: 9.99
+  monto_maximo: 9.99

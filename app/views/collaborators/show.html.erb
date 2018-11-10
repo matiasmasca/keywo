@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Disponibilidad:</strong>
+  <%= @collaborator.disponibilidad %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @collaborator.city %>
+</p>
+
+<p>
+  <strong>Zone:</strong>
+  <%= @collaborator.zone %>
+</p>
+
+<p>
+  <strong>Mobilidad:</strong>
+  <%= @collaborator.mobilidad %>
+</p>
+
+<p>
+  <strong>Herramientas:</strong>
+  <%= @collaborator.herramientas %>
+</p>
+
+<p>
+  <strong>Skill:</strong>
+  <%= @collaborator.skill %>
+</p>
+
+<p>
+  <strong>Others skills:</strong>
+  <%= @collaborator.others_skills %>
+</p>
+
+<%= link_to 'Edit', edit_collaborator_path(@collaborator) %> |
+<%= link_to 'Back', collaborators_path %>

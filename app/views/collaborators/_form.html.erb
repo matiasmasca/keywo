@@ -1,0 +1,52 @@
+<%= form_with(model: collaborator, local: true) do |form| %>
+  <% if collaborator.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(collaborator.errors.count, "error") %> prohibited this collaborator from being saved:</h2>
+
+      <ul>
+      <% collaborator.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :disponibilidad %>
+    <%= form.number_field :disponibilidad, id: :collaborator_disponibilidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city_id %>
+    <%= form.text_field :city_id, id: :collaborator_city_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zone_id %>
+    <%= form.text_field :zone_id, id: :collaborator_zone_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mobilidad %>
+    <%= form.check_box :mobilidad, id: :collaborator_mobilidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :herramientas %>
+    <%= form.text_field :herramientas, id: :collaborator_herramientas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :skill_id %>
+    <%= form.text_field :skill_id, id: :collaborator_skill_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :others_skills %>
+    <%= form.text_field :others_skills, id: :collaborator_others_skills %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

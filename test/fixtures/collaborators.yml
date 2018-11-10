@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  disponibilidad: 1
+  city: one
+  zone: one
+  mobilidad: false
+  herramientas: MyString
+  skill: one
+  others_skills: MyString
+
+two:
+  disponibilidad: 1
+  city: two
+  zone: two
+  mobilidad: false
+  herramientas: MyString
+  skill: two
+  others_skills: MyString

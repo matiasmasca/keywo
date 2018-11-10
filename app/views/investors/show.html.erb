@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sector:</strong>
+  <%= @investor.sector %>
+</p>
+
+<p>
+  <strong>Monto minimo:</strong>
+  <%= @investor.monto_minimo %>
+</p>
+
+<p>
+  <strong>Monto maximo:</strong>
+  <%= @investor.monto_maximo %>
+</p>
+
+<%= link_to 'Edit', edit_investor_path(@investor) %> |
+<%= link_to 'Back', investors_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sector: one
+  marca: MyString
+  descripcion: MyText
+  necesidad_dinero: 9.99
+  necesidad_colaboradores: MyString
+  necesidad_colaboradores_cantidad: 1
+  necesidad_otra: MyString
+
+two:
+  sector: two
+  marca: MyString
+  descripcion: MyText
+  necesidad_dinero: 9.99
+  necesidad_colaboradores: MyString
+  necesidad_colaboradores_cantidad: 1
+  necesidad_otra: MyString
