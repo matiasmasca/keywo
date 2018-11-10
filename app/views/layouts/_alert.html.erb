@@ -1,0 +1,18 @@
+<%# Rails flash messages styled for Materialize %>
+<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+    <div class="row" id="alert_box">
+      <div>
+        <div class="card alert alert-<%= name.to_s == 'notice' ? 'success' : 'danger' %> ">
+          <% if msg.class == Array %>
+            <% msg.each do |message| %>
+              <%= content_tag :div, message, :id => "flash_#{name}", class: 'card-content' %>
+            <% end %>
+          <% else %>
+            <%= content_tag :div, msg, :id => "flash_#{name}", class: 'card-content' %>
+          <% end %>          
+       </div>
+      </div>
+    </div>
+  <% end %>
+<% end %>
