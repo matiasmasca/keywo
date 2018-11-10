@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  resources :projects
+  resources :cities
+  devise_for :users
   resources :investor_projects
   resources :investors
   resources :collaborators
-  resources :projects
   resources :sectors
   resources :skills
   resources :zones

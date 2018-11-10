@@ -17,7 +17,7 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create project" do
     assert_difference('Project.count') do
-      post projects_url, params: { project: { descripcion: @project.descripcion, marca: @project.marca, necesidad_colaboradores: @project.necesidad_colaboradores, necesidad_colaboradores_cantidad: @project.necesidad_colaboradores_cantidad, necesidad_dinero: @project.necesidad_dinero, necesidad_otra: @project.necesidad_otra, sector_id: @project.sector_id } }
+      post projects_url, params: { project: { descripcion: @project.descripcion, marca: @project.marca, necesidad_colaboradores: @project.necesidad_colaboradores, necesidad_colaboradores_cantidad: @project.necesidad_colaboradores_cantidad, necesidad_dinero: @project.necesidad_dinero, necesidad_otra: @project.necesidad_otra, sector_id: @project.sector_id, user_id: @project.user_id } }
     end
 
     assert_redirected_to project_url(Project.last)
@@ -34,7 +34,7 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update project" do
-    patch project_url(@project), params: { project: { descripcion: @project.descripcion, marca: @project.marca, necesidad_colaboradores: @project.necesidad_colaboradores, necesidad_colaboradores_cantidad: @project.necesidad_colaboradores_cantidad, necesidad_dinero: @project.necesidad_dinero, necesidad_otra: @project.necesidad_otra, sector_id: @project.sector_id } }
+    patch project_url(@project), params: { project: { descripcion: @project.descripcion, marca: @project.marca, necesidad_colaboradores: @project.necesidad_colaboradores, necesidad_colaboradores_cantidad: @project.necesidad_colaboradores_cantidad, necesidad_dinero: @project.necesidad_dinero, necesidad_otra: @project.necesidad_otra, sector_id: @project.sector_id, user_id: @project.user_id } }
     assert_redirected_to project_url(@project)
   end
 

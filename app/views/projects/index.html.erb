@@ -12,6 +12,7 @@
       <th>Necesidad colaboradores</th>
       <th>Necesidad colaboradores cantidad</th>
       <th>Necesidad otra</th>
+      <th>User</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -26,6 +27,7 @@
         <td><%= project.necesidad_colaboradores %></td>
         <td><%= project.necesidad_colaboradores_cantidad %></td>
         <td><%= project.necesidad_otra %></td>
+        <td><%= project.user %></td>
         <td><%= link_to 'Show', project %></td>
         <td><%= link_to 'Edit', edit_project_path(project) %></td>
         <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>

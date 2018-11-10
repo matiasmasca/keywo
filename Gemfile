@@ -60,3 +60,5 @@ gem 'font-awesome-rails'
 gem 'creative_tim'
 
 gem 'jquery-rails'
+
+gem 'devise'

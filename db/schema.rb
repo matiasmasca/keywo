@@ -62,9 +62,11 @@ ActiveRecord::Schema.define(version: 20181110194521) do
     t.string "necesidad_colaboradores"
     t.integer "necesidad_colaboradores_cantidad"
     t.string "necesidad_otra"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["sector_id"], name: "index_projects_on_sector_id"
+    t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
   create_table "sectors", force: :cascade do |t|
@@ -97,6 +99,7 @@ ActiveRecord::Schema.define(version: 20181110194521) do
     t.bigint "city_id"
     t.string "district"
     t.string "address"
+    t.string "user_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["city_id"], name: "index_users_on_city_id"
@@ -120,5 +123,6 @@ ActiveRecord::Schema.define(version: 20181110194521) do
   add_foreign_key "investor_projects", "projects"
   add_foreign_key "investors", "sectors"
   add_foreign_key "projects", "sectors"
+  add_foreign_key "projects", "users"
   add_foreign_key "zones", "cities"
 end

@@ -8,6 +8,7 @@ class CreateProjects < ActiveRecord::Migration[5.1]
       t.string :necesidad_colaboradores
       t.integer :necesidad_colaboradores_cantidad
       t.string :necesidad_otra
+      t.references :user, foreign_key: true
 
       t.timestamps
     end

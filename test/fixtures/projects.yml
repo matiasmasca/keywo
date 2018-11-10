@@ -8,6 +8,7 @@ one:
   necesidad_colaboradores: MyString
   necesidad_colaboradores_cantidad: 1
   necesidad_otra: MyString
+  user: one
 
 two:
   sector: two
@@ -17,3 +18,4 @@ two:
   necesidad_colaboradores: MyString
   necesidad_colaboradores_cantidad: 1
   necesidad_otra: MyString
+  user: two
