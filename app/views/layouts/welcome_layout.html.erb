@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>KeyWo | Se el cambio en la educación <%= yield(:title) %></title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%#= stylesheet_link_tag 'home/welcome', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>KeyWo</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -41,21 +41,7 @@
   <!--==========================
     Top Bar
   ============================-->
-  <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="fa fa-phone"></i> +1 5589 55488 55
-      </div>
-      <div class="social-links float-right">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      </div>
-    </div>
-  </section>
+  
 
   <!--==========================
     Header
@@ -64,27 +50,29 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">Reve<span>al</span></a></h1>
+        <h1><a href="#body" class="scrollto">Key<span>Wo</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#body">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
+          <li class="menu-active"><a href="#body">Inicio</a></li>
+          <li><a href="#about">Nosotras</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#portfolio">Proyectos</a></li>
+
+          <li class="menu-has-children"><a href="">Asesoramientos</a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
+              <li><a href="#">Financieros</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Personal</a></li>
+              <li><a href="#">Administrativo</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#team">Subscribite</a></li>
+          <li><a href="#contact">Contactanos</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -96,11 +84,12 @@
   <section id="intro">
 
     <div class="intro-content">
-      <h2>Making <span>your ideas</span><br>happen!</h2>
-      <div>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
-      </div>
+      <h2>Toma tu <span style="color: #fff;">pasi&oacute;n</span><br>y haz que suceda</h2>
+     
+     <div>
+        <a href="#about" class="btn-get-started scrollto">Quiero Emprender</a>
+        <a href="#portfolio" class="btn-projects scrollto">Quiero Invertir</a>
+      </div> -->
     </div>
 
     <div id="intro-carousel" class="owl-carousel" >
@@ -126,20 +115,57 @@
           </div>
 
           <div class="col-lg-6 content">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-
+            <h2>Diseminar la empatía, unión y apoyo entre mujeres y empoderamiento femenino son los principales objetivos de nuestra iniciativa.
+            </h2>
+            <h3>El proyecto consiste en construir una red colaborativa de mujeres que buscan conquistar la autonomía financiera. 
+           <h3></h3>
+              <hr>
             <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Damos la oportunidad para que las mujeres puedan decidir que hacer con su tiempo, dinero y trabajo.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Proporcionamos un espacio en donde podes encontrarte con soluciones para lo que buscas.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Somos una comunidad colaborativa de inversión de ideas.</li>
             </ul>
 
           </div>
         </div>
 
       </div>
-    </section><!-- #about -->
+
+      <section id="perfil" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>Perfiles</h2>
+          </div>
+          <div class="row col-md-12 member">
+            <div class="roles">
+              <div class="col-md-3">
+                <div class="pic"><img src="img/perfil-emprendedora.jpg" alt=""></div>
+                <div class="details">
+                  <h4>Emprendedora</h4>
+                </div>
+              </div>
+            </div>
+  
+            <div class="roles">
+              <div class="col-md-3">
+                <div class="pic"><img src="img/perfil-inversora.jpg" alt=""></div>
+                <div class="details">
+                  <h4>Inversora</h4>
+                </div>
+              </div>
+            </div>
+  
+            <div class="roles">
+              <div class="col-md-3 ">
+                <div class="pic"><img src="img/perfil-colaboradora.jpg" alt=""></div>
+                <div class="details">
+                  <h4>Colaboradora</h4>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section><!-- #team -->
+  
 
     <!--==========================
       Services Section
@@ -147,8 +173,8 @@
     <section id="services">
       <div class="container">
         <div class="section-header">
-          <h2>Services</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2>Servicios</h2>
+          <p>Proporcionamos un espacio en donde podes encontrarte con soluciones para lo que buscas.</p>
         </div>
 
         <div class="row">
@@ -156,32 +182,32 @@
           <div class="col-lg-6">
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="fa fa-bar-chart"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident etiro rabeta lingo.</p>
+              <h4 class="title"><a href="">Seguridad financiera</a></h4>
+              <p class="description">El objetivo último de esta estrategia es que seamos capaces de alcanzar una estabilidad económica que nos acerque a esa ansiada seguridad financiera que tanto buscamos.</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="box wow fadeInRight">
               <div class="icon"><i class="fa fa-picture-o"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata nodera clas.</p>
+              <h4 class="title"><a href="">Portal de Trabajo</a></h4>
+              <p class="description">Ofrece a los miembros de la red un servicio de búsqueda de trabajo en línea, de manera rápida y simple.</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade.</p>
+              <h4 class="title"><a href="">Asesoramientos</a></h4>
+              <p class="description">Si no sabes como, te damos asesoramiento sobre como investir tu capital en proyectos rentables y auditados de manera rigorosas.</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="box wow fadeInRight" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-map"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
+              <h4 class="title"><a href="">Formacion</a></h4>
+              <p class="description">Nunca es muy pronto o muy tarde para adquirir una formación financiera, tomar el control de tus finanzas y ponerte el camino hacia la seguridad financiera.</p>
             </div>
           </div>
 
@@ -196,8 +222,8 @@
     <section id="clients" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Clients</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2>Clientes</h2>
+          <p>Nuestras clientes son mujeres que buscan el desarrollo o el lanzamientos de sus proyectos.</p>
         </div>
 
         <div class="owl-carousel clients-carousel">
@@ -215,13 +241,13 @@
     </section><!-- #clients -->
 
     <!--==========================
-      Our Portfolio Section
+      nuestro proyecto Section
     ============================-->
     <section id="portfolio" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Our Portfolio</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2>Proyectos</h2>
+          <p>Aqui presentamos algunos proyectos de nuestras empredendoras.</p>
         </div>
       </div>
 
@@ -233,7 +259,9 @@
               <a href="img/portfolio/1.jpg" class="portfolio-popup">
                 <img src="img/portfolio/1.jpg" alt="">
                 <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 1</h2></div>
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Day Care</h2> 
+                    <p>Ofrecemos un servicio confiable para mujeres que necesitan dejar sus hijos a cargo de personas responsables por su seguridad durante el dia.                  </p>
+                  </div>
                 </div>
               </a>
             </div>
@@ -244,7 +272,11 @@
               <a href="img/portfolio/2.jpg" class="portfolio-popup">
                 <img src="img/portfolio/2.jpg" alt="">
                 <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 2</h2></div>
+                  <div class="portfolio-info">
+                    <h2 class="wow fadeInUp">Studio de Yoga</h2>
+                    <p>Estudie en Tibet varias técnicas de Yoga y, de vuelta a Argentina, me gustaría empezar mi propio estudio.
+                    </p>
+                  </div>
                 </div>
               </a>
             </div>
@@ -255,8 +287,9 @@
               <a href="img/portfolio/3.jpg" class="portfolio-popup">
                 <img src="img/portfolio/3.jpg" alt="">
                 <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 3</h2></div>
-                </div>
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Restaurante Vegano</h2>
+                  <p>Tengo un restaurant Vegano y me gustaria inversión para tener acceso a productos orgánicos.</p>
+                </div></div>
               </a>
             </div>
           </div>
@@ -266,51 +299,9 @@
               <a href="img/portfolio/4.jpg" class="portfolio-popup">
                 <img src="img/portfolio/4.jpg" alt="">
                 <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 4</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/5.jpg" class="portfolio-popup">
-                <img src="img/portfolio/5.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 5</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/6.jpg" class="portfolio-popup">
-                <img src="img/portfolio/6.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 6</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/7.jpg" class="portfolio-popup">
-                <img src="img/portfolio/7.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 7</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/8.jpg" class="portfolio-popup">
-                <img src="img/portfolio/8.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 8</h2></div>
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Start Up de Desarrollo Web</h2>
+                  <p>Nosotras somos desarrolladores y necesitamos inversión para llevar adelante el proyecto de empezar.
+                  </p></div>
                 </div>
               </a>
             </div>
@@ -327,64 +318,62 @@
     <section id="testimonials" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2>Testimonios</h2>
+          <p>Te contamos historias increibles sobre mujeres que lograron transformar sus vidas completamente por medio de nuestra red.</p>
         </div>
         <div class="owl-carousel testimonials-carousel">
 
             <div class="testimonial-item">
               <p>
                 <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                Ser miembro de la red KeyWo ha sido la mejor decesion que he tomado ya que me ha permitido poner en marcha el proyecto que siempre en soñado realizar.                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
               </p>
               <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
+              <h3>Noelia Ruiz</h3>
+              <h4>Emprendedora</h4>
             </div>
 
             <div class="testimonial-item">
               <p>
                 <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                Agradezco la capacidad de participar en la comunidad aunque no se disponga del capital o la idea del un proyecto, ya que me permitio al menos conseguir trabajo dentro de esta maravillosa comunidad.
                 <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
               </p>
               <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
               <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
+              <h4>Colaboradora</h4>
             </div>
 
             <div class="testimonial-item">
               <p>
                 <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+            Como inversora me encanta la idea de poder apoyar y alentar a demas mujeres a ser empredendoras que llevan su idea a la realidad.    
                 <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
               </p>
               <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
               <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
+              <h4>Inversora</h4>
             </div>
 
             <div class="testimonial-item">
               <p>
                 <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                Me encanta esta red que nos permite, a las mujeres, fortalecernos y apoyarnos mutualmente.                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
               </p>
               <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
+              <h3>Matilda Brandon</h3>
+              <h4>Colaboradora</h4>
             </div>
 
             <div class="testimonial-item">
               <p>
                 <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+               KeyWo me ha acompañado y asesorado a llevar mi proyecto a la realidad.
                 <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
               </p>
               <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
+              <h3>Jonny Larson</h3>
+              <h4>Emprendedora</h4>
             </div>
 
         </div>
@@ -393,38 +382,20 @@
     </section><!-- #testimonials -->
 
     <!--==========================
-      Call To Action Section
-    ============================-->
-    <section id="call-to-action" class="wow fadeInUp">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- #call-to-action -->
-
-    <!--==========================
       Our Team Section
     ============================-->
     <section id="team" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Our Team</h2>
+          <h2>Nuestro Staff</h2>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="member">
               <div class="pic"><img src="img/team-1.jpg" alt=""></div>
               <div class="details">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Lorana White</h4>
+                <span>Maneger</span>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
@@ -455,8 +426,8 @@
             <div class="member">
               <div class="pic"><img src="img/team-3.jpg" alt=""></div>
               <div class="details">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>Camila Anderson</h4>
+                <span>Contador</span>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
@@ -472,7 +443,7 @@
               <div class="pic"><img src="img/team-4.jpg" alt=""></div>
               <div class="details">
                 <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+                <span>Administracion</span>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
@@ -493,8 +464,8 @@
     <section id="contact" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Contact Us</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2>Contactenos</h2>
+          <p>Para mas informacion por favor contactenos.</p>
         </div>
 
         <div class="row contact-info">
@@ -502,16 +473,16 @@
           <div class="col-md-4">
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
-              <h3>Address</h3>
-              <address>A108 Adam Street, NY 535022, USA</address>
+              <h3>Direccion</h3>
+              <address>955 Belgrano, Buenos Aires, Argentina</address>
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
-              <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+              <h3></h3>
+              <p><a href="tel:+4593-23845">4593-2384</a></p>
             </div>
           </div>
 
@@ -519,7 +490,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
+              <p><a href="mailto:info@keywo.com">info@keywo.com</a></p>
             </div>
           </div>
 
@@ -532,28 +503,28 @@
 
       <div class="container">
         <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="sendmessage">Tu mensaje ha sido enviado. Gracias!</div>
           <div id="errormessage"></div>
           <form action="" method="post" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Por favor, ingrese un email valido" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Motivo" data-rule="minlen:4" data-msg="Por favor ingrese mas de 8 caracteres" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor dejenos un comentario" placeholder="Mensaje"></textarea>
               <div class="validation"></div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center"><button type="submit">Enviar mensaje</button></div>
           </form>
         </div>
 
@@ -568,16 +539,9 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Reveal</strong>. All Rights Reserved
+        &copy; Todos los derechos reservados a <strong>KeyWo</strong>.
       </div>
       <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- #footer -->
